@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "de.kobe"
-version = "0.1"
+version = "1.0"
 
 repositories {
     google()
@@ -30,7 +30,7 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "gha-notifier"
-            packageVersion = "0.1.0"
+            packageVersion = "1.0.0"
         }
     }
 }
