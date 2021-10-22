@@ -19,8 +19,11 @@ repositories {
 dependencies {
     implementation(compose.desktop.currentOs)
     implementation("io.ktor:ktor-client-core:${Versions.ktor}")
-    implementation("io.ktor:ktor-client-jetty:${Versions.ktor}")
-
+    implementation("io.ktor:ktor-client-cio:${Versions.ktor}")
+    implementation("io.ktor:ktor-client-serialization:${Versions.ktor}")
+    testImplementation("io.ktor:ktor-client-mock:${Versions.ktor}")
+    testImplementation("org.junit.jupiter:junit-jupiter:${Versions.junit}")
+    testImplementation("org.junit.jupiter:junit-jupiter:${Versions.junit}")
 
 }
 
